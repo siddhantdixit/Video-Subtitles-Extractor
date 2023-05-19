@@ -110,8 +110,8 @@ def save_to_s3(file_name):
 
     # Create an S3 client with specified credentials and region
     s3 = boto3.client('s3', 
-            aws_access_key_id='AKIAUQE3YQI5EU4XPFBQ', 
-            aws_secret_access_key='wSe4wG5CGqtzMkSe7Gbtox21QQKiJBcmcJl4zLsb', 
+            aws_access_key_id='YOUR-AWS-ACCESS-KEY', 
+            aws_secret_access_key='YOUR-AWS-SECRET-KEY', 
             region_name='ap-south-1')
 
     # Upload the file
@@ -122,8 +122,8 @@ def save_to_dynamo(file_name,subtitles,keyword):
     
     # Create a DynamoDB resource with specified credentials and region
     dynamodb = boto3.resource('dynamodb', 
-                aws_access_key_id='AKIAUQE3YQI5EU4XPFBQ',
-            aws_secret_access_key='wSe4wG5CGqtzMkSe7Gbtox21QQKiJBcmcJl4zLsb',
+                aws_access_key_id='YOUR-AWS-ACCESS-KEY',
+            aws_secret_access_key='YOUR-AWS-SECRET-KEY',
             region_name='ap-south-1'
     )
     # Specify the table name
